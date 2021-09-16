@@ -2,6 +2,11 @@ img {
     max-width: 100%;
 }
 
+ol,
+ul {
+    list-style: none;
+}
+
 header {
     background: #ffffff !important;
 }
@@ -19,6 +24,11 @@ header {
     top: -3px;
     left: 10px;
     font-size: 25px;
+    transition: .5s;
+}
+
+a.logo-title:hover {
+    color: #ccc !important;
 }
 
 form a {
@@ -97,12 +107,21 @@ ul li a {}
     width: 100%;
     background-color: #5ba533;
     color: #fff;
-    font-size: 30px;
-    border: none;
+    font-size: 24px;
+    border: 1px solid transparent;
+    font-weight: 700;
+    padding: 13px 0;
+}
+
+.banner-caption .btn:hover {
+    background-color: #fff !important;
+    border: 1px solid #6278df !important;
+    color: #6278df !important;
+    box-shadow: 3px 3px 27px -3px #6278df !important;
 }
 
 .banner-caption .btn:focus {
-    box-shadow: 3px 3px 27px -3px #6278df !important;
+    box-shadow: none !important;
 }
 
 /* ================== number-cunter Section ============== */
@@ -217,13 +236,16 @@ ul li a {}
 .application-title h1 {
     font-size: 50px;
 }
-.appliction-img{}
-.appliction-img{
+
+.appliction-img {}
+
+.appliction-img {
     position: relative;
 
 
 }
-.appliction-img::before{
+
+.appliction-img::before {
     content: "";
     position: absolute;
     top: 0;
@@ -236,8 +258,42 @@ ul li a {}
     transition: .5s;
 
 }
-.appliction-img:hover::before{
+
+.appliction-img:hover::before {
     opacity: .6;
     visibility: visible;
 
 }
+
+/* ======================== pricing-table-section =================== */
+.pricing-table-section {
+    background-color: #f7f9ff;
+}
+
+.pricing-table-caption {}
+
+.pricing-table-caption h1 {
+    font-size: 63px;
+    margin-bottom: 30px;
+}
+
+.pricing-table-caption h4 {
+    color: #767676;
+}
+
+.pricing-table {}
+
+.pricing-table h1 {}
+
+.pricing-table h4 {}
+
+.pricing-table ul {
+    margin: 0;
+    padding: 0px;
+}
+
+.pricing-table ul li {
+    padding: 0;
+}
+
+.pricing-table ul li i {}
